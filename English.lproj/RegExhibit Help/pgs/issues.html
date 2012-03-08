@@ -1,0 +1,37 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<title>Known issues</title>
+		<link href="../sty/help.css" rel="stylesheet" media="all">
+	</head>
+
+	<body>
+		<div id="banner">
+			<div id="bookid">
+				<a class="bread" href="../RegExhibit%20Help.html">RegExhibit Help</a>
+			</div>
+		</div>
+		<div id="mainbox">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr valign="bottom">
+					<td width="32"><img src="../gfx/RegExhibit32.png" alt="Icon" height="32" width="32"></td>
+					<td width="8"></td>
+					<td valign="bottom">
+						<h1>Known issues</h1>
+					</td>
+				</tr>
+				<tr valign="middle" height="12">
+					<td width="32" height="12"></td>
+					<td width="8" height="12"></td>
+					<td valign="bottom" height="12"></td>
+				</tr>
+			</table>
+			<p>RegExhibit was written to explore regular expressions. It is not optimized to deal with large amounts of text. That doesn&rsquo;t mean, it cannot handle them, but you won&rsquo;t get great performance.</p>
+			<p>When you resize RegExhibit&rsquo;s main window the down arrow in the scrollbar of the area that shows the results for a replacement or a split, can become unresponsive. This seems to be a Cocoa issue.</p>
+			<p>If you use certain Unicode characters, e.g. Chinese, in your sample text without checking the &ldquo;Unicode&rdquo; modifier, RegExhibit will report an invalid regular expression even when this is not the case. With &ldquo;Unicode&rdquo; checked, everything should work as expected.</p>
+			<p>You cannot use a null character, (<code>\0</code> or any of its variants), inside the replacement string when replacing. RegExhibit uses null characters internally, and it will think your regular expression is invalid. Sorry. On the bright side: even if you could use them, you wouldn&rsquo;t see them as replacement text, because they are non-printing characters. ;-)</p>
+		</div>
+	</body>
+
+</html>

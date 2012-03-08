@@ -1,0 +1,130 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<title>How to use</title>
+		<meta name="keywords" content="RegExhibit">
+		<link href="../sty/help.css" rel="stylesheet" media="all">
+	</head>
+
+	<body>
+		<div id="banner">
+			<div id="bookid">
+				<a class="bread" href="../RegExhibit%20Help.html">RegExhibit Help</a></div>
+		</div>
+		<div id="mainbox">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr valign="bottom">
+					<td width="32"><img src="../gfx/RegExhibit32.png" alt="Icon" height="32" width="32"></td>
+					<td width="8"></td>
+					<td valign="bottom">
+						<h1>How to use RegExhibit</h1>
+					</td>
+				</tr>
+				<tr valign="middle" height="12">
+					<td width="32" height="12"></td>
+					<td width="8" height="12"></td>
+					<td valign="bottom" height="12"></td>
+				</tr>
+			</table>
+			<p><img src="../gfx/brwnbullet.gif" alt="bullet" height="8" width="8" border="0"> <a href="#basic">Basic usage</a></p>
+			<p><img src="../gfx/brwnbullet.gif" alt="bullet" height="8" width="8" border="0"> <a href="#modifiers">Modifiers</a></p>
+			<p><img src="../gfx/brwnbullet.gif" alt="bullet" height="8" width="8" border="0"> <a href="#preferences">Preferences</a></p>
+			<h2><a id="basic" name="basic"></a><b>Basic usage</b></h2>
+			<p>Using RegExhibit should be reasonably straightforward. The main window has three tabs: find, replace and split. You enter a regular expression, and when you are replacing a replacement string, at the top. Next there is a space where you can set the modifiers for the regular expression.</p>
+			<p>The text you want to search through is in the middle. If your expression matches anything, it will show up there. The replace and split tabs also show the results of the replacement and splitting.</p>
+			<p>At the bottom of the main window you can see if there were any problems with the match. Here you can also toggle the details drawer, which shows more information on the results of a match.</p>
+			<h2><a id="modifiers" name="modifiers"></a>Modifiers</h2>
+			<p>You can influence the way a regular expression is interpretated or applied by setting one or more modifiers. Some of these can also be <a title="Setting mode modifiers from within a regular expression" href="modemodifiers.html">set from within a regular expression</a>.</p>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr height="22">
+					<td bgcolor="#e6edff" width="10" height="22">&nbsp;</td>
+					<td valign="middle" nowrap bgcolor="#e6edff" height="22">
+						<p><b>Modifier:</b></p>
+					</td>
+					<td valign="middle" bgcolor="#e6edff" width="12%" height="22">&nbsp;</td>
+					<td valign="middle" bgcolor="#e6edff" height="22">
+						<p><b>Meaning:</b></p>
+					</td>
+					<td valign="top" bgcolor="#e6edff" width="10" height="22">&nbsp;</td>
+				</tr>
+				<tr valign="top" height="24">
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" nowrap height="24">
+						<p>Find all</p>
+					</td>
+					<td class="rule" valign="middle" width="12" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" height="24">
+						<p>Instead of matching just the first item in a text, the regular expression will now match everywhere it can. When splitting a text, &ldquo;find all&rdquo; is always on.</p>
+					</td>
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+				</tr>
+				<tr valign="top" height="24">
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" nowrap height="24">
+						<p>Case-insensitive</p>
+					</td>
+					<td class="rule" valign="middle" width="12" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" height="24">
+						<p>Ignore the difference in case when matching. When on, &ldquo;<code>regexhibit</code>&rdquo; will match &ldquo;RegExhibit&rdquo;. When off, it won't.</p>
+					</td>
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+				</tr>
+				<tr valign="top" height="24">
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" nowrap height="24">
+						<p>Allow whitespace and comments</p>
+					</td>
+					<td class="rule" valign="middle" width="12" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" height="24">
+						<p>Also known as &ldquo;free flow mode&rdquo;.<br>
+							When set, (most) whitespace in a regular expression is ignored. This also permits comments preceded by &ldquo;<code>#</code>&rdquo; in an expression. If you want to match a white space character, you will have to do this with <code>\s</code>.</p>
+					</td>
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+				</tr>
+				<tr valign="top" height="24">
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" nowrap height="24">
+						<p>Match newline with dot</p>
+					</td>
+					<td class="rule" valign="middle" width="12" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" height="24">
+						<p>Also known as &ldquo;dot matches all mode&rdquo;.<br>
+							When set a dot &ldquo;<code>.</code>&rdquo; will match any character, including a newline.</p>
+					</td>
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+				</tr>
+				<tr valign="top" height="24">
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" nowrap height="24">
+						<p>Treat strings as multiple lines</p>
+					</td>
+					<td class="rule" valign="middle" width="12" height="24">&nbsp;</td>
+					<td class="rule" valign="middle" height="24">
+						<p>Also known as &ldquo;multiline mode&rdquo;.<br>
+							When set <code>^</code> and <code>$</code> will match at embedded newlines, not just at the beginning or end of the entire text.</p>
+					</td>
+					<td class="rule" valign="middle" width="10" height="24">&nbsp;</td>
+				</tr>
+				<tr valign="top" height="24">
+					<td class="" valign="middle" width="10" height="24">&nbsp;</td>
+					<td class="" valign="middle" nowrap height="24">
+						<p>Unicode</p>
+					</td>
+					<td class="" valign="middle" width="12" height="24">&nbsp;</td>
+					<td class="" valign="middle" height="24">
+						<p>When set, character classes will include the relevant Unicode characters. For example, with the Unicode modifier set &ldquo;&uuml;&rdquo; will be in <code>\w</code>. Without it, it will not.</p>
+					</td>
+					<td class="" valign="middle" width="10" height="24">&nbsp;</td>
+				</tr>
+			</table>
+			<h2><b>Preferences</b></h2>
+			<p><a id="preferences" name="preferences"></a>The Preferences window allows you to set the <i>colours</i> with which RegExhibit will show matches, captures, and replacements. You can also decide whether you want RegExhibit to <i>underline</i> matches, captures, and replacements. This can be useful when they contain spaces at their beginning or ending that you otherwise would not see.<br>
+				If you want you can also tell RegExhibit to <i>shade overlapping captures</i>. When you do, characters that participate in more than one capture will have a darker background.</p>
+			<p>RegExhibit normally immediately shows you the results of any changes you make. Sometimes you will want more control over when RegExhibit performs a match, e.g. when you have a slow computer or are matching a long text. If you uncheck &ldquo;<i>Live matching</i>&rdquo;, RegExhibit will not match untill you press the &ldquo;match&rdquo; button on the main window.</p>
+			<p>Perl allows regular expressions to contain code blocks. This can be very useful, but is also dangerous if you don&rsquo;t make sure your code is harmless. By default this option is disabled in RegExhibit. If you think you know what you are doing, you can enabled it by checking &ldquo;<i>Allow Perl code execution</i>&rdquo;.<br>
+				Even when set, RegExhibit will disallow you to &ldquo;<code>print</code>&rdquo; (or any of its variants) to <code>STDOUT</code>. You can use &ldquo;<code>warn</code>&rdquo;, but that will only cause RegExhibit to think the regular expression is invalid.</p>
+		</div>
+	</body>
+
+</html>

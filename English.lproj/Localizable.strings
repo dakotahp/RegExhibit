@@ -1,0 +1,29 @@
+"Match" = "Match";
+"Cancel" = "Cancel";
+"Quit" = "Quit";
+
+// Displayed when a capture is undefined in Perl. (Used in details outline and split table.)
+"undefined" = "undefined";
+
+// Used in split table as tool tip to distinguish the entries.
+"Part %d" = "Part %d";
+
+// Used in details outline.
+"Matchnumber&positions" = "Match %d (from %d to %d: ";	// Note: no ending parenthesis!
+"Matched text" = "Matched text";
+"Replacement text" = "Replacement text";
+"Capturenumber&positions" = "Capture %d (from %d to %d: ";	// Note: no ending parenthesis!
+"Capture undefined" = "Capture %d (undefined)";
+
+// Used in alert when the user tries to run RegExhibit on an older version of OS X.
+"Version %@ too low" = "RegExhibit requires Mac OS X %@";
+"Warning version %@ too low" = "To run RegExhibit you need to install Mac OS X %@ or higher.";
+
+// Used in alert when Perl cannot be located.
+"No Perl" = "Problem locating \"Perl\".";	// Alert title
+"Warning no Perl" = "RegExhibit uses the Unix application \"Perl\". This doesn't seem to be available on your computer."; // Alert text
+
+// Used in alert in preferences window after selecting allow code.
+"Confirm allow code" = "Are you sure you want to allow code execution?";	// Alert title
+"Warning allow code" = "By allowing Perl code inside regular expressions you can lose data and crash RegExhibit. You should make doubly sure you know what your code does!"; // Alert text
+"Allow code" = "Allow code";	// Button title
